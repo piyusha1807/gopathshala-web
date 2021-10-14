@@ -1,0 +1,40 @@
+@import '~antd/es/style/themes/default.less';
+
+.courseCard {
+  padding: 8px 2px;
+  background-color: #f0f2f5;
+}
+
+.playerTabs {
+  background-color: #ffffff;
+  // :global {
+  //   .ant-tabs-nav {
+  //     z-index: unset;
+  //     box-shadow: none;
+  //     transition: none;
+  //     .ant-tabs-nav-wrap {
+  //       margin: 0px 16px;
+  //     }
+  //   }
+  // }
+}
+
+.courseContent {
+  :global {
+    .ant-card-body {
+      padding: 0px;
+    }
+  }
+}
+
+//video player
+.player-wrapper {
+  position: relative;
+  padding-top: 45% /* Player ratio: 100 / (1280 / 720) */
+}
+
+.react-player {
+  position: absolute;
+  top: 0;
+  left: 0;
+}

@@ -1,0 +1,49 @@
+@import '~antd/es/style/themes/default.less';
+
+.btnRow {
+    :global {
+        .ant-btn {
+            margin-right: 8px;
+          }
+    }
+}
+
+.curriculumCard {
+    margin-bottom: 5px;
+    :global {
+        .ant-card-body {
+            border-left: 3px solid #1890ff;
+            border-radius: 3px;
+            padding-left: 10px;
+            .cardIcon {
+                float: right;
+                // margin-top: -22px;
+                > span:first-child {
+                    // background-color: darkcyan;
+                    // padding: 5px;
+                    // border-radius: 50%;
+                    margin-right: 15px;
+                }
+            }
+            .ant-col:first-child {
+                padding-top: 4px;
+                color: rgb(75, 75, 75);
+                font-size: small;
+            }
+        }
+        .ant-card-body:hover {
+            // background-color: #e6f7ff;
+            // color: #1890ff;
+        }
+    }
+}
+
+.curriculumForm {
+    margin-bottom: 5px;
+    :global {
+        .ant-card-body {
+            border-left: 3px solid #1890ff;
+            border-radius: 3px;
+        }
+    }
+}

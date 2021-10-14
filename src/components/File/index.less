@@ -1,0 +1,76 @@
+@import '~antd/es/style/themes/default.less';
+
+.profilePhoto {
+    :global {
+        .avatar-uploader > .ant-upload {
+            width: 128px;
+            height: 128px;
+          }
+    }
+}
+
+.courseImage {
+    :global {
+        .ant-upload-list {
+            background-color: aqua;
+
+        }
+    }
+}
+
+.customDrawerStyle {
+    :global {
+        .ant-drawer-content-wrapper {
+            display: none;
+        }
+    }
+}
+
+.pdfTopbar {
+    background-color: white;
+
+}
+
+.customPage {
+    canvas {
+        width: 100% !important;
+        height: auto !important;
+    }
+}
+
+
+.pdfView {
+    position: relative;
+    overflow: scroll;
+    height: calc(100vh - 35px);
+}
+
+.pdfToolbar {
+    width: '100%';
+    position: fixed;
+    top: 0;
+    // right: 0;
+    // left: 0;
+    z-index: 1;
+    background-color: white;
+    display: block;
+}
+
+.customCard {
+    :global {
+        .ant-card-head-title {
+            flex: none;
+        }
+    }
+}
+
+.pdfHoverButtons {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    bottom: 5em;
+    right: 8em;
+    z-index: 1;
+    height: 70px;
+    justify-content: space-between;
+}

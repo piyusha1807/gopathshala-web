@@ -1,0 +1,21 @@
+@import '~antd/es/style/themes/default.less';
+
+.courseStyle {
+  padding: 0px;
+    :global {
+      .ant-page-header-heading {
+        margin: 8px 16px;
+      } 
+      .ant-page-header-footer {
+        margin-top: 0px;
+        .ant-tabs > .ant-tabs-nav{
+          box-shadow: 0 1px 4px 0 #0015291f;
+          transition: background 0.3s, width 0.2s;
+          z-index: 1;
+          .ant-tabs-nav-wrap {
+            margin: 0px 16px;
+          }
+        }
+      }
+    }
+}

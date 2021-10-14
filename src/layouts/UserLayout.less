@@ -1,0 +1,80 @@
+@import '~antd/es/style/themes/default.less';
+
+.container {
+  height: 100%;
+  background: url('https://www.gstatic.com/duo/desktop/images/landing_confetti.svg') no-repeat center center fixed; 
+  background-color: rgb(250, 250, 250);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.content {
+  padding: 2rem;
+  width: 600px;
+  margin: auto;
+  // margin-top: 40px;
+  // margin-bottom: 40px;
+  position: relative;
+  top: 40px;
+  background-color: white;
+  border-radius: 1rem; 
+  -webkit-box-shadow: 2px 2px 50px 10px rgba(245,245,245,1);
+  -moz-box-shadow: 2px 2px 50px 10px rgba(245,245,245,1);
+  box-shadow: 2px 2px 50px 10px rgba(245,245,245,1);
+}
+
+.top {
+  text-align: center;
+}
+
+.header {
+  height: 44px;
+  line-height: 44px;
+  a {
+    text-decoration: none;
+  }
+}
+
+.logo {
+  height: 44px;
+  margin-right: 16px;
+  vertical-align: top;
+}
+
+.title {
+  position: relative;
+  top: 2px;
+  color: @heading-color;
+  font-weight: 600;
+  font-size: 33px;
+  font-family: Avenir, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
+
+.desc {
+  margin-top: 12px;
+  margin-bottom: 40px;
+  color: @text-color-secondary;
+  font-size: @font-size-base;
+}
+
+
+
+@media (max-width: @screen-md-min) {
+  .content {
+    width: 80%;
+    padding: 2rem;
+  }
+}
+
+@media (max-width: @screen-sm-min) {
+  .container {
+    background-color: rgb(254, 254, 254);
+  }
+
+  .content {
+    width: 90%;
+    padding: 1rem;
+  }
+}

@@ -1,0 +1,30 @@
+@import '~antd/es/style/themes/default.less';
+
+// .customSteps {
+//     :global {
+        
+//     }
+// }
+
+.information {
+    line-height: 22px;
+    :global {
+      .ant-row:not(:last-child) {
+        margin-bottom: 24px;
+      }
+    }
+    .label {
+      padding-right: 8px;
+      color: @heading-color;
+      text-align: right;
+      @media screen and (max-width: @screen-sm) {
+        text-align: left;
+      }
+    }
+  }
+
+  .result {
+    max-width: 560px;
+    margin: 0 auto;
+    padding: 24px 0 8px;
+  }
